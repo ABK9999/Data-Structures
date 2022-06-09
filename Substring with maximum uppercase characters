@@ -1,0 +1,14 @@
+
+import ast
+test_str = input()
+count = 0
+L = []
+
+for i in test_str:
+    if i.isupper():
+        count+=1
+        L.append(count)
+    else:
+        count = 0
+        
+print(max(L))
